@@ -12,10 +12,11 @@
         }
 
         body {
-            font-family: 'Georgia', 'Hiragino Mincho ProN', serif;
+            font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+            font-size: 16px;
             background: #fafaf8;
             color: #2c2c2c;
-            line-height: 1.8;
+            line-height: 1.9;
             padding: 20px;
         }
 
@@ -28,17 +29,32 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
+        .hero {
+            margin: -40px -40px 30px -40px;
+            overflow: hidden;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: center 20%;
+            display: block;
+        }
+
         h1 {
-            font-size: 28px;
+            font-family: 'Georgia', 'Hiragino Mincho ProN', serif;
+            font-size: 30px;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             font-weight: 600;
         }
 
         .subtitle {
             text-align: center;
-            color: #666;
-            font-size: 14px;
+            color: #555;
+            font-size: 16px;
             margin-bottom: 30px;
         }
 
@@ -47,8 +63,8 @@
             padding: 20px;
             border-radius: 6px;
             margin-bottom: 30px;
-            font-size: 14px;
-            line-height: 1.7;
+            font-size: 16px;
+            line-height: 1.8;
         }
 
         .section {
@@ -56,7 +72,8 @@
         }
 
         .section-title {
-            font-size: 18px;
+            font-family: 'Georgia', 'Hiragino Mincho ProN', serif;
+            font-size: 20px;
             font-weight: 600;
             margin-bottom: 15px;
             padding-bottom: 10px;
@@ -79,7 +96,7 @@
         .question-text {
             font-weight: 600;
             margin-bottom: 12px;
-            font-size: 15px;
+            font-size: 16px;
         }
 
         .options {
@@ -102,7 +119,7 @@
 
         .option label {
             cursor: pointer;
-            font-size: 14px;
+            font-size: 16px;
         }
 
         .score-display {
@@ -112,7 +129,7 @@
             border-radius: 4px;
             text-align: center;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 15px;
             color: #666;
         }
 
@@ -172,8 +189,8 @@
         }
 
         .result-content {
-            font-size: 15px;
-            line-height: 1.8;
+            font-size: 16px;
+            line-height: 1.9;
             color: #2c2c2c;
         }
 
@@ -195,7 +212,7 @@
             color: white;
             text-decoration: none;
             border-radius: 6px;
-            font-size: 14px;
+            font-size: 15px;
             transition: all 0.3s;
         }
 
@@ -208,7 +225,7 @@
             padding-top: 20px;
             border-top: 1px solid #d4ccc4;
             text-align: center;
-            font-size: 12px;
+            font-size: 13px;
             color: #999;
         }
 
@@ -217,21 +234,32 @@
                 padding: 20px;
             }
 
+            .hero {
+                margin: -20px -20px 24px -20px;
+            }
+
+            .hero img {
+                height: 200px;
+            }
+
             h1 {
                 font-size: 24px;
             }
 
             button {
                 padding: 10px 20px;
-                font-size: 14px;
+                font-size: 15px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div style="text-align: center; margin-bottom: 30px;">
-            <img src="images/logo-first-class.png" alt="First Class by Seiko Meguro" style="max-width: 250px; height: auto; margin-bottom: 20px;">
+        <div class="hero">
+            <img src="images/hero-paris.jpg" alt="目黒せいこ">
+        </div>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="images/logo-first-class.png" alt="Seiko Meguro" style="max-width: 180px; height: auto;">
         </div>
         <h1>天地人 人生設計チェック</h1>
         <p class="subtitle">天・地・人、3つの視点で今の現在地を見立てる</p>
